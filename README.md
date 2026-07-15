@@ -6,7 +6,11 @@ The script matches videos using preserved Apple `Keys:CreationDate` metadata, si
 
 ## Requirements
 
-Run this on a Linux machine or VM with the Synology Photos directory mounted.
+> ## Important
+>
+> **Run this on a Linux machine or VM with the Synology Photos directory mounted.**
+>
+> Do not run it directly on the Synology NAS. The script requires Python 3, ExifTool, and read/write access to the mounted Photos directory.
 
 - Python 3
 - ExifTool
