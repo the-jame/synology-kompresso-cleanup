@@ -9,7 +9,7 @@ TARGET_DIR = "/your/synology/photos/directory"
 # TARGET_DIR = "/mnt/synology/Photos/MobileBackup"
 
 # True = report only. Nothing is changed.
-DRY_RUN = False
+DRY_RUN = True
 
 # When above is False, originals are moved here, not permanently deleted.
 QUARANTINE_DIR = "/your/quarantine/directory"
