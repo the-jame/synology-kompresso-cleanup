@@ -128,11 +128,13 @@ for creation_date in sorted(by_date):
 
         os.makedirs(os.path.dirname(quarantine_path), exist_ok=True)
 
-    if os.path.exists(quarantine_path):
-        print(f"  ACTION: SKIPPED — already exists in quarantine: {quarantine_path}")
-    else:
-        print(f"  ACTION: moving original to: {quarantine_path}")
-        os.rename(larger["path"], quarantine_path)
+        if os.path.exists(quarantine_path):
+            print(f"  ACTION: SKIPPED — already exists in quarantine: {quarantine_path}")
+        else:
+            print(f"  ACTION: moving original to: {quarantine_path}")
+            os.rename(larger["path"], quarantine_path)
+
+    print()
 
 print()
 
